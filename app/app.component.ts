@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
-import {ContactInfo} from './contactinfo'
+import {ContactInfo} from './contactinfo';
+
 
 @Component({
     selector: 'my-app',
@@ -7,21 +8,22 @@ import {ContactInfo} from './contactinfo'
 
 })
 export class AppComponent { 
+
 	title = 'Angular App';
 	name = "Fotis";
 	lastName = "Karalis";
 	myTitle = 'Web Developer';
-	info = [
+	information = [
 
 		new ContactInfo('HTML5 = Regards DOM'),
 		new ContactInfo('CSS3 = Regards DOM styling')
 	];
-	myInfo = this.info[0];
+	myInfo = this.information[0];
 
   addInfo(newInfo:string) {
 	  if (newInfo) {
-		  this.info.push(newInfo);
-    }
+		  this.information.push(newInfo);
+	  }
   }
 
 }

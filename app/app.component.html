@@ -1,16 +1,16 @@
 <h1>Project: {{title}}</h1>
-    			<span>{{name}}</span>
-    			<span>{{lastName}}</span>
-    			<a href="#">Position: {{myTitle}}</a>
-    			<h4>Skills</h4>
-				<ul>
-			      <li *ngFor="#info of info">
-			       <pre>{{ info.description }} </pre>
-			      </li>
-			    </ul>
+<span>{{name}}</span>
+<span>{{lastName}}</span>
+<a href="#">Position: {{myTitle}}</a>
+<h4>Skills</h4>
+<ul>
+  <li *ngFor="#info of information">
+   <pre>{{ info.description }} </pre>
+  </li>
+</ul>
 
-	<input #newInfo
-      (keyup.enter)="addInfo(newInfo.value)"
-      (blur)="addInfo(newInfo.value); newInfo.value='' ">
-	
-	<button (click)=addInfo(newInfo.value)>Add</button>
+<input #newInfo
+  (keyup.enter)="addInfo(newInfo.value)"
+  (blur)="addInfo(newInfo.value); newInfo.value='' ">
+
+<button (click)=addInfo(newInfo.value)>Add</button>

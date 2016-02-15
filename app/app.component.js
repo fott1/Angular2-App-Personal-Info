@@ -25,15 +25,15 @@ System.register(['angular2/core', './contactinfo'], function(exports_1) {
                     this.name = "Fotis";
                     this.lastName = "Karalis";
                     this.myTitle = 'Web Developer';
-                    this.info = [
+                    this.information = [
                         new contactinfo_1.ContactInfo('HTML5 = Regards DOM'),
                         new contactinfo_1.ContactInfo('CSS3 = Regards DOM styling')
                     ];
-                    this.myInfo = this.info[0];
+                    this.myInfo = this.information[0];
                 }
                 AppComponent.prototype.addInfo = function (newInfo) {
                     if (newInfo) {
-                        this.info.push(newInfo);
+                        this.information.push(newInfo);
                     }
                 };
                 AppComponent = __decorate([
