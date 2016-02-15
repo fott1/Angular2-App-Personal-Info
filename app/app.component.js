@@ -33,7 +33,7 @@ System.register(['angular2/core', './contactinfo'], function(exports_1) {
                 }
                 AppComponent.prototype.addInfo = function (newInfo) {
                     if (newInfo) {
-                        this.information.push(newInfo);
+                        this.information.push(new contactinfo_1.ContactInfo(newInfo));
                     }
                 };
                 AppComponent = __decorate([

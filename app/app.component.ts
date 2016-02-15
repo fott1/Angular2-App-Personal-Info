@@ -22,7 +22,7 @@ export class AppComponent {
 
   addInfo(newInfo:string) {
 	  if (newInfo) {
-		  this.information.push(newInfo);
+		   this.information.push(new ContactInfo(newInfo));
 	  }
   }
 
