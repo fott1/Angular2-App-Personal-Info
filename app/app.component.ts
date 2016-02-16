@@ -1,29 +1,42 @@
 import {Component} from 'angular2/core';
-import {ContactInfo} from './contactinfo';
+import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+
+import {ProfileInfo} from './contactinfo';
+import {SkillsComponent} from './skills.component';
+import {AboutComponent} from './about.component';
+import {ContactComponent} from './contact.component';
+import {PortfolioComponent} from './portfolio.component';
 
 
 @Component({
     selector: 'my-app',
-	templateUrl: 'app/app.component.html'
-
+	template: `
+	<h1>{{title}}</h1>
+	<h4>{{name}} {{lastName}}</h4>
+	<h5>{{proffession}}</h5>
+    <nav>
+      <a [routerLink]="['SkillsComponent']">Skills</a>
+      <a [routerLink]="['AboutComponent']">About</a>
+      <a [routerLink]="['PortfolioComponent']">Work</a>
+	  <a [routerLink]="['ContactComponent']">Contact</a>
+	</nav>
+   <router-outlet></router-outlet>
+   `,
+	directives: [ROUTER_DIRECTIVES]
 })
-export class AppComponent { 
+@RouteConfig([
+	{path:'/skills', name: 'SkillsComponent', component: SkillsComponent},
+	{path: '/about', name: 'AboutComponent', component: AboutComponent},
+	{ path: '/portfolio', name: 'PortfolioComponent', component: PortfolioComponent }
+	{ path: '/contact', name: 'ContactComponent', component: ContactComponent }
 
-	title = 'Angular App';
+])
+
+export class AppComponent {
+
+	title = 'Professional Profile';
 	name = "Fotis";
 	lastName = "Karalis";
-	myTitle = 'Web Developer';
-	information = [
-
-		new ContactInfo('HTML5 = Regards DOM'),
-		new ContactInfo('CSS3 = Regards DOM styling')
-	];
-	myInfo = this.information[0];
-
-  addInfo(newInfo:string) {
-	  if (newInfo) {
-		   this.information.push(new ContactInfo(newInfo));
-	  }
-  }
-
+	proffession = 'Web Developer';
+	
 }

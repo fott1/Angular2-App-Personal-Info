@@ -10,7 +10,7 @@
 </ul>
 
 <input #newInfo
-  (keyup.enter)="addInfo(newInfo.value)"
+  (keyup.enter)="addInfo(newInfo.value); newInfo.value='' "
   (blur)="addInfo(newInfo.value); newInfo.value='' ">
 
 <button (click)=addInfo(newInfo.value)>Add</button>

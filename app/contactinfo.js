@@ -1,15 +1,15 @@
 System.register([], function(exports_1) {
-    var ContactInfo;
+    var ProfileInfo;
     return {
         setters:[],
         execute: function() {
-            ContactInfo = (function () {
-                function ContactInfo(description) {
+            ProfileInfo = (function () {
+                function ProfileInfo(description) {
                     this.description = description;
                 }
-                return ContactInfo;
+                return ProfileInfo;
             })();
-            exports_1("ContactInfo", ContactInfo);
+            exports_1("ProfileInfo", ProfileInfo);
         }
     }
 });

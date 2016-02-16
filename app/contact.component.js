@@ -9,28 +9,26 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var LittleTourComponent;
+    var ContactComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            LittleTourComponent = (function () {
-                function LittleTourComponent() {
-                    this.heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+            ContactComponent = (function () {
+                function ContactComponent() {
                 }
-                LittleTourComponent = __decorate([
+                ContactComponent = __decorate([
                     core_1.Component({
-                        selector: 'little-tour',
-                        template: "\n    \n  "
+                        template: "\n\t\t<h1>contact</h1>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], LittleTourComponent);
-                return LittleTourComponent;
+                ], ContactComponent);
+                return ContactComponent;
             })();
-            exports_1("LittleTourComponent", LittleTourComponent);
+            exports_1("ContactComponent", ContactComponent);
         }
     }
 });
-//# sourceMappingURL=addskill.component.js.map
+//# sourceMappingURL=contact.component.js.map
