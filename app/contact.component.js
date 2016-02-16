@@ -18,10 +18,17 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             ContactComponent = (function () {
                 function ContactComponent() {
+                    this.mail = 'mailto:karalisfotis@gmail.com';
+                    this.website = "http://www.3e.gr";
+                    this.linkedin = "http://LinkedIn Url";
+                    this.facebook = 'http://Facebook Url';
+                    this.twitter = 'http://Twitter Url';
+                    this.mobile = '#';
+                    this.github = "http://Github Url";
                 }
                 ContactComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t\t<h1>contact</h1>\n\t"
+                        template: "\n\t\t<h1>contact</h1>\n\t\t<ul>\n\t\t\t<li><a href=\"{{mail}}\">Mail me</a></li>\n\t\t\t<li><a href=\"{{website}}\">Website</a></li>\n\t\t\t<li><a href=\"{{linkedin}}\">LinkedIn</a></li>\n\t\t\t<li><a href=\"{{facebook}}\">Facebook</a></li>\n\t\t\t<li><a href=\"{{twitter}}\">Twitter</a></li>\n\t\t\t<li><a href=\"{{mobile}}\">Call me</a></li>\n\t\t\t<li><a href=\"{{github}}\">Github</a></li>\n\t\t</ul>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ContactComponent);
