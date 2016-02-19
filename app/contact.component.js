@@ -25,10 +25,15 @@ System.register(['angular2/core'], function(exports_1) {
                     this.twitter = 'http://Twitter Url';
                     this.mobile = '#';
                     this.github = "http://Github Url";
+                    this.reasons = ['Technical', 'Personal',
+                        'General', 'Hire'];
+                    this.submitted = false;
+                    this.active = true;
                 }
+                ContactComponent.prototype.onSubmit = function () { this.submitted = true; };
                 ContactComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p>Below you can find my social media presence. Please drop me any question you like.</p>\n\t\t<ul>\n\t\t\t<li><a href=\"{{mail}}\">Mail me</a></li>\n\t\t\t<li><a href=\"{{website}}\">Website</a></li>\n\t\t\t<li><a href=\"{{linkedin}}\">LinkedIn</a></li>\n\t\t\t<li><a href=\"{{facebook}}\">Facebook</a></li>\n\t\t\t<li><a href=\"{{twitter}}\">Twitter</a></li>\n\t\t\t<li><a href=\"{{mobile}}\">Call me</a></li>\n\t\t\t<li><a href=\"{{github}}\">Github</a></li>\n\t\t</ul>\n\t\t</div>\n\t</div>\n\t"
+                        templateUrl: 'app/contact.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ContactComponent);

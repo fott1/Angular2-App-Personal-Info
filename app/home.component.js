@@ -9,32 +9,26 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var MainFormComponent;
+    var HomeComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            MainFormComponent = (function () {
-                function MainFormComponent() {
-                    this.reasons = ['Technical', 'Personal',
-                        'General', 'Hire'];
-                    this.submitted = false;
-                    this.active = true;
+            HomeComponent = (function () {
+                function HomeComponent() {
                 }
-                MainFormComponent.prototype.onSubmit = function () { this.submitted = true; };
-                MainFormComponent = __decorate([
+                HomeComponent = __decorate([
                     core_1.Component({
-                        selector: 'main-form',
-                        templateUrl: 'app/mainform.component.html'
+                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p class=\"hint\">Navigate to the above links and check my info. This an Angular2 application developed just for training</p>\n\t\t</div>\n\t</div>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], MainFormComponent);
-                return MainFormComponent;
+                ], HomeComponent);
+                return HomeComponent;
             })();
-            exports_1("MainFormComponent", MainFormComponent);
+            exports_1("HomeComponent", HomeComponent);
         }
     }
 });
-//# sourceMappingURL=mainform.component.js.map
+//# sourceMappingURL=home.component.js.map
