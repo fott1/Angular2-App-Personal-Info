@@ -21,7 +21,7 @@ System.register(['angular2/core'], function(exports_1) {
                 }
                 AboutComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t\t<h1>about</h1>\n\t\t<h1>about</h1>\n\t"
+                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p>This is me. I love technology. I love people who love people. I am from Greece. Greece loves humanity. Be like Greece. Visit Greece.</p>\n\t\t</div>\n\t</div>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AboutComponent);

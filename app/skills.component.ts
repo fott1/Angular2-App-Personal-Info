@@ -2,8 +2,18 @@ import {Component} from 'angular2/core';
 @Component({
 	template:
 	`
-		<h1>Skills</h1>
-		<h1>Skills</h1>
+	<hr>
+	<div class="row">
+		<ul>	
+			<li>Coding</li>
+			<li>Travelling</li>
+			<li>Communicating</li>
+			<li>Enjoying life</li>
+			<i>Never forget the real values of life</i>
+		</ul>
+	</div>
+
+
 	`
 })
 export class SkillsComponent { }

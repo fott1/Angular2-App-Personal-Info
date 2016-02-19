@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './skills.component', './about.component', './contact.component', './portfolio.component'], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './skills.component', './about.component', './contact.component', './portfolio.component', './mainform.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, skills_component_1, about_component_1, contact_component_1, portfolio_component_1;
+    var core_1, router_1, skills_component_1, about_component_1, contact_component_1, portfolio_component_1, mainform_component_1;
     var AppComponent;
     return {
         setters:[
@@ -29,6 +29,9 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
             },
             function (portfolio_component_1_1) {
                 portfolio_component_1 = portfolio_component_1_1;
+            },
+            function (mainform_component_1_1) {
+                mainform_component_1 = mainform_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -41,8 +44,8 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\t<h1>{{title}}</h1>\n\t<h4>{{name}} {{lastName}}</h4>\n\t<h5>{{proffession}}</h5>\n    <nav>\n      <a [routerLink]=\"['SkillsComponent']\">Skills</a>\n      <a [routerLink]=\"['AboutComponent']\">About</a>\n      <a [routerLink]=\"['PortfolioComponent']\">Work</a>\n\t  <a [routerLink]=\"['ContactComponent']\">Contact</a>\n\t</nav>\n   <router-outlet></router-outlet>\n   ",
-                        directives: [router_1.ROUTER_DIRECTIVES]
+                        template: "\n\t<div class=\"container\">\n\t<h1>{{title}}</h1>\n\t<h4>{{name}} {{lastName}}</h4>\n\t<h5>{{proffession}}</h5>\n    <nav>\n      <a [routerLink]=\"['AboutComponent']\">About</a>\n      <a [routerLink]=\"['SkillsComponent']\">Skills</a>\n      <a [routerLink]=\"['PortfolioComponent']\">Work</a>\n\t  <a [routerLink]=\"['ContactComponent']\">Contact</a>\n\t</nav>\n   \t<router-outlet></router-outlet>\n\t<main-form></main-form>\n\t</div>\n   ",
+                        directives: [router_1.ROUTER_DIRECTIVES, mainform_component_1.MainFormComponent]
                     }),
                     router_1.RouteConfig([
                         { path: '/skills', name: 'SkillsComponent', component: skills_component_1.SkillsComponent },

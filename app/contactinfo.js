@@ -4,8 +4,11 @@ System.register([], function(exports_1) {
         setters:[],
         execute: function() {
             ProfileInfo = (function () {
-                function ProfileInfo(description) {
+                function ProfileInfo(description, reason, id, name) {
                     this.description = description;
+                    this.reason = reason;
+                    this.id = id;
+                    this.name = name;
                 }
                 return ProfileInfo;
             })();

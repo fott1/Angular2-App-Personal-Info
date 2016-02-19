@@ -9,26 +9,32 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var PortfolioComponent;
+    var MainFormComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            PortfolioComponent = (function () {
-                function PortfolioComponent() {
+            MainFormComponent = (function () {
+                function MainFormComponent() {
+                    this.reason = ['Really Smart', 'Super Flexible',
+                        'Super Hot', 'Weather Changer'];
+                    this.submitted = false;
+                    this.active = true;
                 }
-                PortfolioComponent = __decorate([
+                MainFormComponent.prototype.onSubmit = function () { this.submitted = true; };
+                MainFormComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p>You wanna see my work? Please contact me for more info. Also, check www.3e.gr!</p>\n\t\t</div>\n\t</div>\n\t"
+                        selector: 'main-form',
+                        templateUrl: 'app/mainform.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], PortfolioComponent);
-                return PortfolioComponent;
+                ], MainFormComponent);
+                return MainFormComponent;
             })();
-            exports_1("PortfolioComponent", PortfolioComponent);
+            exports_1("MainFormComponent", MainFormComponent);
         }
     }
 });
-//# sourceMappingURL=portfolio.component.js.map
+//# sourceMappingURL=mainform.component.js.map
