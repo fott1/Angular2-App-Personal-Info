@@ -44,7 +44,7 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\t<div class=\"container\">\n\t<h1>{{title}}</h1>\n\t<h4>{{name}} {{lastName}}</h4>\n\t<h5>{{proffession}}</h5>\n    <nav>\n      <a [routerLink]=\"['AboutComponent']\">About</a>\n      <a [routerLink]=\"['SkillsComponent']\">Skills</a>\n      <a [routerLink]=\"['PortfolioComponent']\">Work</a>\n\t  <a [routerLink]=\"['ContactComponent']\">Contact</a>\n\t</nav>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<i>Navigate to the above links and check my info</i>\n\t\t</div>\n\t</div>\n   \t<router-outlet></router-outlet>\n\t<main-form></main-form>\n\t</div>\n   ",
+                        template: "\n\t<div class=\"container\">\n\t<h1>{{title}}</h1>\n\t<h4>{{name}} {{lastName}}</h4>\n\t<h5>{{proffession}}</h5>\n    <nav>\n      <a [routerLink]=\"['AboutComponent']\">About</a>\n      <a [routerLink]=\"['SkillsComponent']\">Skills</a>\n      <a [routerLink]=\"['PortfolioComponent']\">Work</a>\n\t  <a [routerLink]=\"['ContactComponent']\">Contact</a>\n\t</nav>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p class=\"hint\">Navigate to the above links and check my info</p>\n\t\t</div>\n\t</div>\n   \t<router-outlet></router-outlet>\n\t<main-form></main-form>\n\t</div>\n   ",
                         directives: [router_1.ROUTER_DIRECTIVES, mainform_component_1.MainFormComponent]
                     }),
                     router_1.RouteConfig([

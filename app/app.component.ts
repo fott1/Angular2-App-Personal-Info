@@ -25,7 +25,7 @@ import {MainFormComponent} from './mainform.component'
 	</nav>
 	<div class="container">
 		<div class="row">
-			<i>Navigate to the above links and check my info</i>
+			<p class="hint">Navigate to the above links and check my info</p>
 		</div>
 	</div>
    	<router-outlet></router-outlet>
