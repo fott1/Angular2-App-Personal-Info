@@ -3,14 +3,15 @@ import {NgForm}    from 'angular2/common';
 import {ProfileInfo} from './contactinfo';
 
 
+
 @Component({
   selector: 'main-form',
   templateUrl: 'app/mainform.component.html'
 })
 export class MainFormComponent {
 
- reason = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+ reasons = ['Technical', 'Personal',
+            'General', 'Hire'];
 
  
 

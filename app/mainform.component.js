@@ -18,8 +18,8 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             MainFormComponent = (function () {
                 function MainFormComponent() {
-                    this.reason = ['Really Smart', 'Super Flexible',
-                        'Super Hot', 'Weather Changer'];
+                    this.reasons = ['Technical', 'Personal',
+                        'General', 'Hire'];
                     this.submitted = false;
                     this.active = true;
                 }

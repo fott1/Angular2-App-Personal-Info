@@ -23,6 +23,11 @@ import {MainFormComponent} from './mainform.component'
       <a [routerLink]="['PortfolioComponent']">Work</a>
 	  <a [routerLink]="['ContactComponent']">Contact</a>
 	</nav>
+	<div class="container">
+		<div class="row">
+			<i>Navigate to the above links and check my info</i>
+		</div>
+	</div>
    	<router-outlet></router-outlet>
 	<main-form></main-form>
 	</div>
