@@ -1,8 +1,13 @@
-# Angular 2 App, Includes only personal info.
+# Angular 2 App 
 
-More features to come soon
-1. Add Info
-2. Add skills
-3. Routing
-4. And more
+# Includes Some Significant Basic Aspects of Angular2
+
+1. Two way binding
+2. Multiple Routing
+3. Ability to select item from array using a list
+4. Basic templating using TemplateUrl
+5. Contact form
+
+
+
 
