@@ -12,7 +12,6 @@ export class ContactComponent {
 	mobile = '#';
 	github = "http://Github Url";
 
-
  reasons = ['Technical', 'Personal',
             'General', 'Hire'];
 

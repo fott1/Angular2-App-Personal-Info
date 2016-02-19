@@ -14,20 +14,22 @@
   <main-form></main-form>
   </div>
 </div>
-  
 <div class="container">
   <div class="row">
     <div class="col-md-6">
+
       <div  [hidden]="submitted">
-        <h3>Contact Me</h3>
+        <h3>Contact Me</h3><h4 [hidden]="!name">Hello {{name}}!</h4>
         <form *ngIf="active" (ngSubmit)="onSubmit()" #mainForm="ngForm">
 
         <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" required name="name">
+              <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Enter a name here" required>
         </div>
-
-
+         <div class="form-group">
+              <label for="name">Email</label>
+              <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter your email here" required>
+        </div>
           <div class="form-group">
             <label for="reason">Reason</label>
             <select class="form-control" required
@@ -35,20 +37,26 @@
               <option *ngFor="#reason of reasons" [value]="reason">{{reason}}</option>
             </select>
           </div>
-
+        <div class="form-group">
+              <label for="name">Message</label>
+              <textarea name="message" class="form-control" [(ngModel)]="message" placeholder="Write your details" required></textarea>
+        </div>
           <button type="submit" class="btn btn-default" [disabled]="!mainForm.form.valid">Submit</button>
         </form>
       </div>
-
       <div [hidden]="!submitted">
-    <h2>You submitted the following:</h2>
-    <div class="row">
-      <div class="col-xs-3">Reason</div>
-      <div class="col-xs-9 pull-left">{{ reason }}</div>
-    </div>
-    <br>
-    <button class="btn btn-default" (click)="submitted=false">Edit</button>
-  </div>
+        <h2>You submitted the following:</h2>
+        <div class="row">
+          <div class="col-xs-3">Name</div>
+          <div class="col-xs-9 pull-left">{{ name }}</div>
+          <div class="col-xs-3">Email</div>
+          <div class="col-xs-9 pull-left">{{ email }}</div>
+          <div class="col-xs-3">Message</div>
+          <div class="col-xs-9 pull-left">{{ message }}</div>
+        </div>
+        <br>
+        <button class="btn btn-default" (click)="submitted=false">Edit</button>
+      </div>
     </div>
   </div>
 </div>
