@@ -1,16 +1,38 @@
-<h1>Project: {{title}}</h1>
-<span>{{name}}</span>
-<span>{{lastName}}</span>
-<a href="#">Position: {{myTitle}}</a>
-<h4>Skills</h4>
-<ul>
-  <li *ngFor="#info of information">
-   <pre>{{ info.description }} </pre>
-  </li>
-</ul>
-
-<input #newInfo
-  (keyup.enter)="addInfo(newInfo.value); newInfo.value='' "
-  (blur)="addInfo(newInfo.value); newInfo.value='' ">
-
-<button (click)=addInfo(newInfo.value)>Add</button>
+	<div id="top-box">
+		<div class="container">
+			<div class="row">
+				<div class=" col-xs-12 col-md-2 col-md-2 col-lg-2">
+					<a [routerLink]="['HomeComponent']"><img src="angular.svg"></a>
+				</div>
+				<div class="col-xs-12 col-md-10 col-md-10 col-lg-10">
+					<li><a [routerLink]="['HomeComponent']">Home</a></li>
+					<li><a [routerLink]="['AboutComponent']">About</a></li>
+					<li><a [routerLink]="['SkillsComponent']">Skills</a></li>
+					<li><a [routerLink]="['PortfolioComponent']">Work</a></li>
+					<li><a [routerLink]="['ContactComponent']">Contact</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="photo-section">
+		<div class="container">
+			<div class="row top-padding-small">
+				<div class="col-md-2 col-lg-2">
+					<a [routerLink]="['HomeComponent']">
+						<img src="https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11021079_10152741879445060_6520664397103248383_n.jpg?oh=5a211d5b27b61a70941d02543cad60a0&oe=576EEDE0">
+					</a>
+				</div>
+				<div class="col-lg-10">
+					<a [routerLink]="['HomeComponent']">
+						<h1>{{name}} {{lastName}}</h1>
+					</a>
+					<h4>{{status}}</h4>
+					<h5>{{proffession}}</h5>
+					<h5>{{area}}</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	   	<router-outlet></router-outlet>
+	</div>

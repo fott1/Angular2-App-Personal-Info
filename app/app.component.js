@@ -45,7 +45,7 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\t<div class=\"container\">\n\t<div class=\"row\">\n\t<div class=\"col-lg-2\">\n\t<a href=\"/home\"><img src=\"https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11021079_10152741879445060_6520664397103248383_n.jpg?oh=5a211d5b27b61a70941d02543cad60a0&oe=576EEDE0\"></a>\n\t</div>\n\t<div class=\"col-lg-10\">\n\t<a href=\"/home\"><h1>{{name}} {{lastName}}</h1></a>\n\t<h4>{{status}}</h4>\n\t<h5>{{proffession}}</h5>\n\t<h5>{{area}}</h5>\n\t</div>\n\t</div>\n\t</div>\n\t<div class=\"container\">\n    <nav>\n      <a [routerLink]=\"['HomeComponent']\">Home</a>\n      <a [routerLink]=\"['AboutComponent']\">About</a>\n      <a [routerLink]=\"['SkillsComponent']\">Skills</a>\n      <a [routerLink]=\"['PortfolioComponent']\">Work</a>\n\t  <a [routerLink]=\"['ContactComponent']\">Contact</a>\n\t</nav>\n   \t<router-outlet></router-outlet>\n\t</div>\n   ",
+                        templateUrl: 'app/app.component.html',
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([

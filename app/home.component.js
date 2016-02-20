@@ -21,7 +21,7 @@ System.register(['angular2/core'], function(exports_1) {
                 }
                 HomeComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p class=\"hint\">Navigate to the above links and check my info. This an Angular2 application developed just for training</p>\n\t\t</div>\n\t</div>\n\t"
+                        template: "\n\t<hr>\n\t<div class=\"home-component\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<p class=\"hint\">Navigate to the above links and check my info. This an <b>Angular2</b> application developed just for training</p>\n\t\t\t\t<img src=\"app/angular2.png\">\n\t\t\t</div>\n\t\t</div>\n\t</div>\t\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HomeComponent);
