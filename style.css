@@ -14,6 +14,8 @@ body {
 	color: #111111;
   font-weight: 400;
   background: #fff;
+  overflow-y: hidden; // hide vertical scroll bar
+  overflow-x: hidden; // hide horizontal scroll bar
 }
 *:focus {
   outline: none !important;

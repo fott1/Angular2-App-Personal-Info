@@ -11,17 +11,15 @@
     <li><a href="{{mobile}}">Call me</a></li>
     <li><a href="{{github}}">Github</a></li>
   </ul>
-  <main-form></main-form>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-
+    <div class="col-xs-6 col-md-6 col-md-6 col-lg-6">
+      <main-form></main-form>
       <div  [hidden]="submitted">
         <h3>Contact Me</h3><h4 [hidden]="!name">Hello {{name}}!</h4>
         <form *ngIf="active" (ngSubmit)="onSubmit()" #mainForm="ngForm">
-
         <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Enter a name here" required>
@@ -47,12 +45,12 @@
       <div [hidden]="!submitted">
         <h2>You submitted the following:</h2>
         <div class="row">
-          <div class="col-xs-3">Name</div>
-          <div class="col-xs-9 pull-left">{{ name }}</div>
-          <div class="col-xs-3">Email</div>
-          <div class="col-xs-9 pull-left">{{ email }}</div>
-          <div class="col-xs-3">Message</div>
-          <div class="col-xs-9 pull-left">{{ message }}</div>
+          <div class="col-xs-3 col-md-3 col-md-3 col-lg-3">Name</div>
+          <div class="col-xs-9 col-md-9 col-md-9 col-lg-9 pull-left">{{ name }}</div>
+          <div class="col-xs-3 col-md-3 col-md-3 col-lg-3">Email</div>
+          <div class="col-xs-9 col-md-9 col-md-9 col-lg-9 pull-left">{{ email }}</div>
+          <div class="col-xs-3 col-md-3 col-md-3 col-lg-3">Message</div>
+          <div class="col-xs-9 col-md-9 col-md-9 col-lg-9 pull-left">{{ message }}</div>
         </div>
         <br>
         <button class="btn btn-default" (click)="submitted=false">Edit</button>
