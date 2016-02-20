@@ -21,7 +21,7 @@ System.register(['angular2/core'], function(exports_1) {
                 }
                 PortfolioComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<hr>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<p>You wanna see my work? Please contact me for more info. Also, check www.3e.gr!</p>\n\t\t</div>\n\t</div>\n\t"
+                        template: "\n\t<div class=\"container top-padding-medium\">\n\t\t<div class=\"row\">\n\t\t\t<p>You wanna see my work? Please contact me for more info. Also, check www.3e.gr!</p>\n\t\t</div>\n\t</div>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], PortfolioComponent);

@@ -1,10 +1,10 @@
 	<div id="top-box">
 		<div class="container">
-			<div class="row">
+			<div class="row">	
 				<div class=" col-xs-12 col-md-2 col-md-2 col-lg-2">
 					<a [routerLink]="['HomeComponent']"><img src="angular.svg"></a>
 				</div>
-				<div class="col-xs-12 col-md-10 col-md-10 col-lg-10">
+				<div class="col-xs-10 col-md-10 col-md-10 col-lg-10">
 					<li><a [routerLink]="['HomeComponent']">Home</a></li>
 					<li><a [routerLink]="['AboutComponent']">About</a></li>
 					<li><a [routerLink]="['SkillsComponent']">Skills</a></li>
@@ -14,29 +14,39 @@
 			</div>
 		</div>
 	</div>
-	<div class="photo-section">
-		<div class="container">
-			<div class="row top-padding-small">
-				<div class="col-xs-2 col-md-2 col-md-2 col-lg-2">
-					<a [routerLink]="['HomeComponent']">
-						<img src="https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11021079_10152741879445060_6520664397103248383_n.jpg?oh=5a211d5b27b61a70941d02543cad60a0&oe=576EEDE0">
-					</a>
-				</div>
-				<div class="col-xs-10 col-md-10 col-md-10 col-lg-10">
-					<a [routerLink]="['HomeComponent']">
-						<h1>{{name}} {{lastName}}</h1>
-					</a>
-					<h4>{{status}}</h4>
-					<h5>{{proffession}}</h5>
-					<h5>{{area}}</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-	   		<router-outlet></router-outlet>
-	   </div>
-	</div>
+<div class="photo-section">
+<div class="container">
+    <div class="row">
+        <div class=" col-xs-12 col-md-4 col-md-4 col-lg-4">
+            <div class="our-team">
+                <div class="pic">
+                   <a [routerLink]="['HomeComponent']">
+                   		<img src="https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11021079_10152741879445060_6520664397103248383_n.jpg?oh=5a211d5b27b61a70941d02543cad60a0&oe=576EEDE0" alt="Fotis Karalis">
+                   </a>
+                </div>
+                <div class="team-prof">
+                    <h3 class="post-title">{{name}} {{lastName}}</h3>
+                    <div class="border"></div>
+                    <span class="post">{{proffession}}</span>
+                    <span class="post">{{area}}</span>
+                    <span class="post">{{status}}</span>
+
+                    <ul class="team_social">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-12 col-md-8 col-md-8 col-lg-8">
+			<router-outlet></router-outlet>
+        </div>	
+
+    </div>
+</div>
+</div>
 
 	

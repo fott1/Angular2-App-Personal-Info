@@ -18,10 +18,11 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             SkillsComponent = (function () {
                 function SkillsComponent() {
+                    this.skills = ['Coding', 'Travelling', 'Loving', 'Helping', 'Enjoying'];
                 }
                 SkillsComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<hr>\n\t<div class=\"row skills\">\n\t\t<ul>\t\n\t\t\t<li *ngFor=\"#skill of skills\"\n\t\t\t(click)=\"onSelect(skill)\">\n\t\t\t{{skill.name}}</li>\n\t\t\t<i>Never forget the real values of life</i>\n\t\t</ul>\n\t</div>\n\n\n\t"
+                        template: "\n\t<div class=\"row skills top-padding-medium\">\n\t\t<ul>\t\n\t\t\t<li *ngFor=\"#skill of skills\">\n\t\t\t{{skill}}</li>\n\t\t\t<i>Never forget the real values of life</i>\n\t\t</ul>\n\t</div>\n\n\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], SkillsComponent);

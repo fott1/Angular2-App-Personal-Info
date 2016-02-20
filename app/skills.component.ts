@@ -2,12 +2,10 @@ import {Component} from 'angular2/core';
 @Component({
 	template:
 	`
-	<hr>
-	<div class="row skills">
+	<div class="row skills top-padding-medium">
 		<ul>	
-			<li *ngFor="#skill of skills"
-			(click)="onSelect(skill)">
-			{{skill.name}}</li>
+			<li *ngFor="#skill of skills">
+			{{skill}}</li>
 			<i>Never forget the real values of life</i>
 		</ul>
 	</div>
@@ -15,4 +13,9 @@ import {Component} from 'angular2/core';
 
 	`
 })
-export class SkillsComponent { }
+export class SkillsComponent { 
+
+
+skills = ['Coding','Travelling','Loving','Helping','Enjoying']
+
+}

@@ -2,7 +2,6 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: scroll;
-  overflow-x: hidden;
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -341,9 +340,7 @@ h6 {
 max-width: 100%;
 width: 75%;
 }
-.home-component img{
-max-width: 100%;
-}
+
 
 
 
@@ -357,5 +354,101 @@ max-width: 100%;
 .skills li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }
 .skills li:hover {color: #369; background-color: #EEE; left: .2em;}
 
-
+.our-team{
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 15px 10px;
+    border: 0px solid #ebebeb;
+    transition:all 0.3s ease 0s;
+}
+.pic img{
+    border: 10px solid #337ab7;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+.post-title{
+    position: relative;
+    margin: 38px 0 18px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#333;
+}
+.border{
+    width: 100px;
+    border-bottom: 3px solid #337ab7;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease 0s;
+}
+.border:after{
+    content: "";
+    width: 34px;
+    display: block;
+    position: relative;
+    top:3px;
+    border-bottom: 3px solid #F43662;
+    margin: auto;
+}
+.post{
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color:#999;
+    text-transform: capitalize;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+.team_social{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.team_social > li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.team_social > li:last-child{
+    margin-right: 0;
+}
+.team_social > li > a{
+    font-size: 15px;
+    font-weight: 400;
+    color:#333;
+    transition: all 0.3s ease 0s;
+}
+.team_social > li > a:hover{
+    color:#fff;
+}
+.our-team:hover{
+    background: #fff;
+    padding-bottom: 30px;
+}
+.our-team:hover .pic img{
+    border-color: #E23237;
+}
+.our-team:hover .border{
+    border-color: #E23237;
+}
+.our-team:hover .border:after{
+    border-color: #fff;
+}
+.our-team:hover .post{
+    margin-top: 0;
+    opacity: 0;
+}
+.our-team:hover .team_social{
+    opacity: 1;
+    bottom: 0;
+}
+@media screen and (max-width: 990px){
+    .our-team{
+        margin-bottom: 30px;
+    }
+}
 
