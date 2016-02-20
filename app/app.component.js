@@ -53,7 +53,7 @@ System.register(['angular2/core', 'angular2/router', './skills.component', './ab
                         { path: '/about', name: 'AboutComponent', component: about_component_1.AboutComponent },
                         { path: '/portfolio', name: 'PortfolioComponent', component: portfolio_component_1.PortfolioComponent },
                         { path: '/contact', name: 'ContactComponent', component: contact_component_1.ContactComponent },
-                        { path: '/', name: 'HomeComponent', component: home_component_1.HomeComponent }
+                        { path: '/', name: 'HomeComponent', component: home_component_1.HomeComponent, useAsDefault: true }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

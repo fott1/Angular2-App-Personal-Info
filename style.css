@@ -1,6 +1,8 @@
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -14,8 +16,9 @@ body {
 	color: #111111;
   font-weight: 400;
   background: #fff;
-  overflow-y: hidden; // hide vertical scroll bar
-  overflow-x: hidden; // hide horizontal scroll bar
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
 *:focus {
   outline: none !important;
@@ -344,7 +347,15 @@ max-width: 100%;
 
 
 
+.contact ul {list-style-type: none; margin-left: 1em; padding: 0; width: 20em;}
 
+.contact li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }
+.contact li:hover {color: #369; background-color: #EEE; left: .2em;}
+
+.skills ul {list-style-type: none; margin-left: 1em; padding: 5px; width: 20em;}
+
+.skills li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }
+.skills li:hover {color: #369; background-color: #EEE; left: .2em;}
 
 
 

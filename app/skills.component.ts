@@ -3,12 +3,11 @@ import {Component} from 'angular2/core';
 	template:
 	`
 	<hr>
-	<div class="row">
+	<div class="row skills">
 		<ul>	
-			<li>Coding</li>
-			<li>Travelling</li>
-			<li>Communicating</li>
-			<li>Enjoying life</li>
+			<li *ngFor="#skill of skills"
+			(click)="onSelect(skill)">
+			{{skill.name}}</li>
 			<i>Never forget the real values of life</i>
 		</ul>
 	</div>

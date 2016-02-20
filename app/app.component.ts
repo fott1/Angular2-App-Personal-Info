@@ -7,7 +7,8 @@ import {AboutComponent} from './about.component';
 import {ContactComponent} from './contact.component';
 import {PortfolioComponent} from './portfolio.component';
 
-import {HomeComponent} from './home.component'
+import {HomeComponent} from './home.component';
+
 
 
 
@@ -21,7 +22,7 @@ import {HomeComponent} from './home.component'
 	{path: '/about', name: 'AboutComponent', component: AboutComponent},
 	{ path: '/portfolio', name: 'PortfolioComponent', component: PortfolioComponent },
 	{ path: '/contact', name: 'ContactComponent', component: ContactComponent },
-	{ path: '/', name: 'HomeComponent', component: HomeComponent}
+	{ path: '/', name: 'HomeComponent', component: HomeComponent, useAsDefault: true}
 
 ])
 
