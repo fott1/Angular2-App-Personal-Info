@@ -9,6 +9,16 @@ import {Component} from 'angular2/core';
 			<i>Never forget the real values of life</i>
 		</ul>
 	</div>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-xs-4 col-md-4 col-md-4 col-lg-4">
+			<img src="./images/front.png">
+			</div>
+			<div class="col-xs-8 col-md-8 col-md-8 col-lg-8">
+			<img src="./images/angular.jpg">
+			</div>
+		</div>
+	</div>
 
 
 	`

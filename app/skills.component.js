@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1) {
                 }
                 SkillsComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<div class=\"row skills top-padding-medium\">\n\t\t<ul>\t\n\t\t\t<li *ngFor=\"#skill of skills\">\n\t\t\t{{skill}}</li>\n\t\t\t<i>Never forget the real values of life</i>\n\t\t</ul>\n\t</div>\n\n\n\t"
+                        template: "\n\t<div class=\"row skills top-padding-medium\">\n\t\t<ul>\t\n\t\t\t<li *ngFor=\"#skill of skills\">\n\t\t\t{{skill}}</li>\n\t\t\t<i>Never forget the real values of life</i>\n\t\t</ul>\n\t</div>\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row text-center\">\n\t\t\t<div class=\"col-xs-4 col-md-4 col-md-4 col-lg-4\">\n\t\t\t<img src=\"./images/front.png\">\n\t\t\t</div>\n\t\t\t<div class=\"col-xs-8 col-md-8 col-md-8 col-lg-8\">\n\t\t\t<img src=\"./images/angular.jpg\">\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], SkillsComponent);
