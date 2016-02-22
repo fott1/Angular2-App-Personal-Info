@@ -4,7 +4,7 @@ import {Component} from 'angular2/core';
 	`
 	<div class="row skills top-padding-medium">
 		<ul>	
-			<li *ngFor="#skill of skills">
+			<li *ngFor="#skill of skills" [class.selected]="skill === selectedSkill" (click)="onSelect(skill)">
 			{{skill}}</li>
 			<i>Never forget the real values of life</i>
 		</ul>

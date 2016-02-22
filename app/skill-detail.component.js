@@ -9,27 +9,28 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var SkillsComponent;
+    var SkillDetailComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            SkillsComponent = (function () {
-                function SkillsComponent() {
-                    this.skills = ['Coding', 'Travelling', 'Loving', 'Helping', 'Enjoying'];
+            SkillDetailComponent = (function () {
+                function SkillDetailComponent() {
                 }
-                SkillsComponent = __decorate([
+                SkillDetailComponent = __decorate([
                     core_1.Component({
-                        template: "\n\t<div class=\"row skills top-padding-medium\">\n\t\t<ul>\t\n\t\t\t<li *ngFor=\"#skill of skills\" [class.selected]=\"skill === selectedSkill\" (click)=\"onSelect(skill)\">\n\t\t\t{{skill}}</li>\n\t\t\t<i>Never forget the real values of life</i>\n\t\t</ul>\n\t</div>\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row text-center\">\n\t\t\t<div class=\"col-xs-4 col-md-4 col-md-4 col-lg-4\">\n\t\t\t<img src=\"./images/front.png\">\n\t\t\t</div>\n\t\t\t<div class=\"col-xs-8 col-md-8 col-md-8 col-lg-8\">\n\t\t\t<img src=\"./images/angular.jpg\">\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t"
+                        selector: 'my-skill-detail',
+                        template: "\n    <div *ngIf=\"skill\">\n      <h2>{{skill.name}} details</h2>\n      <div>\n        <label>Description: </label>{{skill.description}}\n      </div>\n      <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"skill.name\" placeholder=\"name\"/>\n      </div>\n    </div>\n  ",
+                        inputs: ['skill']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], SkillsComponent);
-                return SkillsComponent;
+                ], SkillDetailComponent);
+                return SkillDetailComponent;
             })();
-            exports_1("SkillsComponent", SkillsComponent);
+            exports_1("SkillDetailComponent", SkillDetailComponent);
         }
     }
 });
-//# sourceMappingURL=skills.component.js.map
+//# sourceMappingURL=skill-detail.component.js.map

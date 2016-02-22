@@ -20,9 +20,11 @@ import {HomeComponent} from './home.component';
 	{ path: '/portfolio', name: 'PortfolioComponent', component: PortfolioComponent },
 	{ path: '/contact', name: 'ContactComponent', component: ContactComponent },
 	{ path: '/', name: 'HomeComponent', component: HomeComponent, useAsDefault: true}
+
 ])
 
 export class AppComponent {
+
 	status = 'Hey, this is me!';
 	name = "Fotis";
 	lastName = "Karalis";
