@@ -10,6 +10,7 @@
 					<li><a [routerLink]="['SkillsComponent']">Skills</a></li>
 					<li><a [routerLink]="['PortfolioComponent']">Work</a></li>
 					<li><a [routerLink]="['ContactComponent']">Contact</a></li>
+                    <li><a [routerLink]="['WikiSmartComponent']">Wikipedia</a></li>
 				</div>
 			</div>
 		</div>
@@ -43,10 +44,13 @@
         </div>
         <div class=" col-xs-12 col-md-8 col-md-8 col-lg-8">
 			<router-outlet></router-outlet>
+             <my-wiki-smart></my-wiki-smart>
         </div>	
+
 
     </div>
 </div>
 </div>
+
 
 	
