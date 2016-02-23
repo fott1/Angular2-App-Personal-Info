@@ -451,19 +451,12 @@ width: 75%;
         margin-bottom: 30px;
     }
 }
-
-.wikipedia ul {
-  -webkit-padding-start: 0px;
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 1.2em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
 .wikipedia input {
 width: 100%;
 font-size: 16px;
 border: 1px solid #337ab7;
 }
+.wikipedia ul {list-style-type: none; margin-left: 0em; padding: 5px; width: 20em;}
 
+.wikipedia li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }
+.wikipedia li:hover {color: #369; background-color: #EEE; left: .2em;}
