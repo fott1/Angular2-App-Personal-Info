@@ -7,6 +7,7 @@
 3. Ability to select item from array using a list
 4. Basic templating using TemplateUrl
 5. Contact form
+6. Wikipedia Search and links of results
 
 
 
