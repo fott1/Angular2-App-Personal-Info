@@ -423,7 +423,7 @@ width: 75%;
     transition: all 0.3s ease 0s;
 }
 .team_social > li > a:hover{
-    color:#fff;
+    color:#337ab7;
 }
 .our-team:hover{
     background: #fff;
